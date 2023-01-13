@@ -2,10 +2,12 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
+/*estilos del logo*/
 .logo {
   width: 30px;
 }
 
+/*cambiando estilo del menu hamburguesa*/
 .navbar-nav {
   -webkit-box-align: end !important;
       -ms-flex-align: end !important;
@@ -13,9 +15,15 @@ body {
   padding-right: 10px !important;
 }
 
+.navbar-toggler-icon {
+  background-image: url(../assets/hamburguesa-menu.png) !important;
+  border: none !important;
+}
+
 header {
   background: rgb(29, 17, 96);
   background: radial-gradient(circle, rgb(29, 17, 96) 6%, rgb(26, 14, 89) 29%, rgb(29, 0, 62) 100%);
+  border-color: #1c0445;
 }
 
 .titulos {
@@ -37,6 +45,7 @@ header {
 .avatares {
   position: relative;
   height: 50vh;
+  border-bottom-color: #1c0445;
 }
 .avatares .estrella--1 {
   width: 25px;
@@ -91,13 +100,13 @@ header {
   top: 100px;
   right: 90px;
 }
-.avatares .galaxia {
+.avatares .galaxia--1 {
   width: 30px;
   position: absolute;
   top: 4px;
   right: 100px;
 }
-.avatares .galaxia2 {
+.avatares .galaxia--2 {
   width: 18px;
   position: absolute;
   bottom: 130px;
@@ -107,5 +116,54 @@ header {
   width: 18px;
   position: absolute;
   bottom: 130px;
+  left: 30px;
+}
+
+main {
+  background-color: #1c0445;
+  border-color: #1c0445;
+}
+
+.sobreMi {
+  padding: 20px;
+  position: relative;
+}
+.sobreMi h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px;
+}
+.sobreMi p {
+  color: #fff;
+  font-size: 1rem;
+  font-size: 400;
+  margin: 10px;
+}
+.sobreMi .astronauta8 {
+  width: 300px;
+}
+.sobreMi .estrella--5 {
+  width: 30px;
+  position: absolute;
+  bottom: 90px;
+  right: 30px;
+}
+.sobreMi .estrella--6 {
+  width: 30px;
+  position: absolute;
+  bottom: 190px;
+  left: 30px;
+}
+.sobreMi .galaxia--3 {
+  width: 30px;
+  position: absolute;
+  bottom: 200px;
+  right: 30px;
+}
+.sobreMi .galaxia--4 {
+  width: 30px;
+  position: absolute;
+  bottom: 90px;
   left: 30px;
 }

@@ -1,0 +1,48 @@
+main{
+    background-color: #1c0445;
+    border-color: #1c0445;
+}
+
+.sobreMi{
+    padding: 20px;
+    position: relative;
+    h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 10px;
+    }
+    p{
+        color: #fff;
+        font-size: 1rem;
+        font-size: 400;
+        margin: 10px;
+    }
+    .astronauta8{
+        width: 300px;
+    }
+    .estrella--5{
+        width: 30px;
+        position: absolute;
+        bottom: 90px;
+        right: 30px;
+    }
+    .estrella--6{
+        width: 30px;
+        position: absolute;
+        bottom: 190px;
+        left: 30px;
+    }
+    .galaxia--3{
+        width: 30px;
+        position: absolute;
+        bottom: 200px;
+        right: 30px;
+    }
+    .galaxia--4{
+        width: 30px;
+        position: absolute;
+        bottom: 90px;
+        left: 30px;
+    }
+}

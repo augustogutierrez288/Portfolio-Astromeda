@@ -1,6 +1,7 @@
 header{
     background: rgb(29,17,96);
     background: radial-gradient(circle, rgba(29,17,96,1) 6%, rgba(26,14,89,1) 29%, rgba(29,0,62,1) 100%);
+    border-color: #1c0445;
 }
 
 .titulos{
@@ -22,6 +23,7 @@ header{
 .avatares{
     position: relative;
     height: 50vh;
+    border-bottom-color: #1c0445;
     .estrella--1{
         width: 25px;
         position: absolute;
@@ -78,13 +80,13 @@ header{
         top: 100px;
         right: 90px;
     }
-    .galaxia{
+    .galaxia--1{
         width: 30px;
         position: absolute;
         top: 4px;
         right: 100px;
     }
-    .galaxia2{
+    .galaxia--2{
         width: 18px;
         position: absolute;
         bottom: 130px;

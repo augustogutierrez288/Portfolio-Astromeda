@@ -1,8 +1,14 @@
+/*estilos del logo*/
 .logo{
     width: 30px;
 }
-
+/*cambiando estilo del menu hamburguesa*/
 .navbar-nav {
     align-items: flex-end !important;
     padding-right: 10px !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../assets/hamburguesa-menu.png) !important;
+    border: none !important;
 }
