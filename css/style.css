@@ -2,22 +2,91 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
-/*estilos del logo*/
-.logo {
+#barra {
+  width: 100vw;
+  height: 7vh;
+  background-color: #1c0445;
+}
+
+#barra-de-navegacion {
+  width: 100vw;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  position: relative;
+  background-color: #1c0445;
+  color: #fff;
+  z-index: 2;
+}
+#barra-de-navegacion img {
+  width: 30px;
+}
+#barra-de-navegacion .navbar {
+  display: none !important;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #720e9e;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 3;
+}
+#barra-de-navegacion .navbar a {
+  display: block;
+  margin-left: 20px;
+  color: #800080;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+#barra-de-navegacion .navbar .element-1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 35px;
+}
+#barra-de-navegacion .navbar .x {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+}
+#barra-de-navegacion .active-navbar {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+#barra-de-navegacion #menu {
+  display: block;
+  background: transparent;
+  border-color: transparent;
+  border: 0;
+}
+#barra-de-navegacion #menu img {
   width: 30px;
 }
 
-/*cambiando estilo del menu hamburguesa*/
-.navbar-nav {
-  -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-          align-items: flex-end !important;
-  padding-right: 10px !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url(../assets/hamburguesa-menu.png) !important;
-  border: none !important;
+.active-scroll {
+  background-color: #33006F !important;
+  position: fixed !important;
 }
 
 header {
