@@ -167,3 +167,85 @@ main {
   bottom: 90px;
   left: 30px;
 }
+
+.stack {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.stack h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+.stack .btn-desing {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #720e9e;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #720e9e;
+  background-color: transparent;
+  cursor: pointer;
+}
+.stack .active {
+  background-color: #800080;
+  color: #33006F;
+  border-color: #800080;
+}
+.stack #contenedor-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 30px 0;
+  height: 150px;
+}
+.stack #contenedor-img img {
+  display: block;
+  width: 40px;
+  margin: 10px;
+}
+.stack .astronauta4 {
+  width: 300px;
+}
+.stack .venus--2 {
+  width: 90%;
+  position: absolute;
+  bottom: -180px;
+}
+
+.proyectos {
+  padding: 20px;
+}
+.proyectos h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0 40px 0;
+}
+
+.carousel-control-prev {
+  left: -12px;
+}
+
+.carousel-control-next {
+  right: -12px !important;
+}
+
+.carousel-inner {
+  border-radius: 20px !important;
+}
