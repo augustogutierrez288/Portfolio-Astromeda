@@ -30,7 +30,6 @@ body {
   width: 30px;
 }
 #barra-de-navegacion .navbar {
-  display: none !important;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -48,6 +47,10 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   z-index: 3;
+  -webkit-transform: translate3d(0px, -100%, 0px);
+          transform: translate3d(0px, -100%, 0px);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 #barra-de-navegacion .navbar a {
   display: block;
@@ -59,15 +62,9 @@ body {
 }
 #barra-de-navegacion .navbar .element-1 {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 30px;
   width: 35px;
-}
-#barra-de-navegacion .navbar .x {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 25px;
 }
 #barra-de-navegacion .navbar .line {
   width: 200px;
@@ -79,7 +76,10 @@ body {
   margin: 10px 0 0 30px;
   text-align: left;
 }
-#barra-de-navegacion .navbar .redes img {
+#barra-de-navegacion .navbar .redes a {
+  text-decoration: none;
+}
+#barra-de-navegacion .navbar .redes a img {
   margin: 10px;
   width: 40px;
 }
@@ -87,15 +87,9 @@ body {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-}
-#barra-de-navegacion #menu {
-  display: block;
-  background: transparent;
-  border-color: transparent;
-  border: 0;
-}
-#barra-de-navegacion #menu img {
-  width: 30px;
+  will-change: transform !important;
+  -webkit-transform: translate3d(0px, 0%, 0px) !important;
+          transform: translate3d(0px, 0%, 0px) !important;
 }
 
 .active-scroll {

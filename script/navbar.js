@@ -3,6 +3,7 @@ const menu = document.getElementById("menu");
 const navbar = document.querySelector(".navbar");
 const x = document.querySelector(".x");
 const all = document.querySelectorAll(".all");
+const burger = document.querySelector(".hamburger");
 
 let ubicacionPrincipal = window.pageYOffset;
 
@@ -20,19 +21,20 @@ window.addEventListener("scroll",()=>{
 });
 
 menu.addEventListener("click",() =>{
-    navbar.classList.add("active-navbar");
-});
-
-x.addEventListener("click",() =>{
-    navbar.classList.remove("active-navbar");
+    navbar.classList.toggle("active-navbar");
 });
 
 all.forEach((e) => {
     e.addEventListener("click", () =>{
         all.forEach((boton) => boton.classList.remove("active-color-menu"));
         e.classList.add("active-color-menu");
+        burger.classList.remove("is-active");
         navbar.classList.remove("active-navbar");
     });
+});
+
+burger.addEventListener("click",() =>{
+    burger.classList.toggle("is-active");
 });
 
 

@@ -18,7 +18,6 @@
         width: 30px;
     }
     .navbar{
-        display: none !important;
         width: 100%;
         height: 100vh;
         position: absolute;
@@ -29,6 +28,8 @@
         justify-content: center;
         align-items: flex-start;
         z-index: 3;
+        transform: translate3d(0px, -100%, 0px);
+        animation-duration: 1s;
         a{
             display: block;
             margin-left: 20px;
@@ -39,15 +40,9 @@
         }
         .element-1{
             position: absolute;
-            top: 30px;
+            top: 20px;
             left: 30px;
             width: 35px;
-        }
-        .x{
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            width: 25px;
         }
         .line{
             width: 200px;
@@ -59,24 +54,21 @@
         .redes{
             margin: 10px 0 0 30px;
             text-align: left;
-            img{
-                margin: 10px;
-                width: 40px;
+            a{
+                text-decoration: none;
+                img{
+                    margin: 10px;
+                    width: 40px;
+                }
             }
         }
     }
     .active-navbar{
         display: flex !important;
+        will-change: transform !important;
+        transform: translate3d(0px, 0%, 0px) !important;
     }
-    #menu{
-        display: block;
-        background: transparent;
-        border-color: transparent;
-        border: 0;
-        img{
-            width: 30px;
-        }
-    }
+   
 }
 
 .active-scroll{
