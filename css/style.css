@@ -75,6 +75,9 @@ body {
 #barra-de-navegacion .navbar .redes {
   margin: 10px 0 0 30px;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #barra-de-navegacion .navbar .redes a {
   text-decoration: none;
@@ -110,16 +113,17 @@ header {
 
 .titulos {
   padding: 50px;
+  height: 43vh;
 }
 .titulos p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
   margin: 10px;
 }
 .titulos h1 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 44px;
   font-weight: 600;
   margin: 5px;
 }
