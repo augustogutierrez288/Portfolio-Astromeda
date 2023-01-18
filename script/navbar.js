@@ -22,6 +22,8 @@ window.addEventListener("scroll",()=>{
 
 menu.addEventListener("click",() =>{
     navbar.classList.toggle("active-navbar");
+    navbar.classList.contains("active-navbar") ?  burger.style = "position: fixed;" :  burger.style = "position: absolute;";
+    animacionNavbar()
 });
 
 all.forEach((e) => {
@@ -30,6 +32,7 @@ all.forEach((e) => {
         e.classList.add("active-color-menu");
         burger.classList.remove("is-active");
         navbar.classList.remove("active-navbar");
+        animacionNavbar()
     });
 });
 
@@ -38,5 +41,12 @@ burger.addEventListener("click",() =>{
 });
 
 
-
-
+function animacionNavbar(){
+    if(navbar.classList.contains("active-navbar")){
+        navbar.classList.remove("slide-out-top");
+        navbar.classList.add("slide-in-top");
+    }else{
+        navbar.classList.remove("slide-in-top");
+        navbar.classList.add("slide-out-top");
+    }
+}
