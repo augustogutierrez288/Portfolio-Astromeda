@@ -29,8 +29,12 @@ const bootstrap = new Stack("framework","bootstrap","./assets/bootstrap.png");
 const react = new Stack("framework","react","./assets/react.png");
 const reactNative = new Stack("framework","react native","./assets/react-native.png");
 const angular = new Stack("framework","angular","./assets/angular.png");
-const nodeJS = new Stack("framework","nodejs","./assets/nodejs.png");
-const arrayStack = [html,css,js,tsc,python,sass,bootstrap,react,reactNative,angular,nodeJS];
+// entorno de ejecucion
+const nodeJS = new Stack("EV","nodejs","./assets/nodejs.png");
+//repositorios
+const git = new Stack("repositorio","git","./assets/git.webp")
+const github = new Stack("repositorio","github","./assets/github.webp")
+const arrayStack = [html,css,js,tsc,python,sass,bootstrap,react,reactNative,angular,nodeJS,git,github];
 pintarStack(arrayStack);
 //filtro
 const botones = document.querySelectorAll(".btn-desing");

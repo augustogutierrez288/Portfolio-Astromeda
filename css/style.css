@@ -1,12 +1,13 @@
 body {
   font-family: "Poppins", sans-serif !important;
   scroll-behavior: smooth !important;
+  background-color: #121212 !important;
 }
 
 #barra {
   width: 100%;
   height: 7vh;
-  background-color: #1c0445;
+  background-color: #121212;
 }
 
 #barra-de-navegacion {
@@ -23,7 +24,7 @@ body {
           align-items: center;
   padding: 20px;
   position: relative;
-  background-color: #1c0445;
+  background-color: #121212;
   color: #fff;
   z-index: 2;
 }
@@ -36,7 +37,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #9109cd;
+  background-color: #4e2c96;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -54,7 +55,7 @@ body {
 #barra-de-navegacion .navbar a {
   display: block;
   margin-left: 20px;
-  color: #660366;
+  color: #342163;
   font-size: 3rem;
   font-weight: 600;
   text-decoration: none;
@@ -95,7 +96,6 @@ body {
 }
 
 .active-scroll {
-  background-color: #27023c !important;
   position: fixed !important;
 }
 
@@ -105,8 +105,8 @@ body {
 }
 
 .slide-in-top {
-  -webkit-animation: slide-in-top 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-in-top {
@@ -135,8 +135,8 @@ body {
   }
 }
 .slide-out-top {
-  -webkit-animation: slide-out-top 4.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: slide-out-top 4.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: slide-out-top 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-top 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes slide-out-top {
@@ -190,45 +190,15 @@ body {
     transform: scale(1);
   }
 }
-.slide-in-top--2 {
-  -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-in-top--2 {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-top--2 {
-  0% {
-    -webkit-transform: translateY(-1000px);
-    transform: translateY(-1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 header {
-  background: rgb(29, 17, 96);
-  background: radial-gradient(circle, rgb(29, 17, 96) 6%, rgb(26, 14, 89) 29%, rgb(29, 0, 62) 100%);
-  border-color: #1c0445;
+  background-image: url(../assets/banner-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
 }
 
 .titulos {
   padding: 50px;
-  height: 43vh;
 }
 .titulos p {
   color: #fff;
@@ -243,146 +213,82 @@ header {
   margin: 5px;
 }
 
-.avatares {
+.avatar {
   position: relative;
-  height: 50vh;
-  border-bottom-color: #1c0445;
 }
-.avatares .estrella--1 {
-  width: 25px;
-  position: absolute;
-  top: 30px;
-  left: 60px;
-}
-.avatares .estrella--2 {
-  width: 20px;
-  position: absolute;
-  top: 50px;
-  right: 120px;
-}
-.avatares .estrella--3 {
-  width: 50px;
-  position: absolute;
-  top: 110px;
-  left: 35px;
-}
-.avatares .estrella--4 {
-  width: 25px;
-  position: absolute;
-  top: 200px;
-  right: 30px;
-}
-.avatares .luna--media {
-  width: 90%;
-  position: absolute;
-  bottom: 0;
-}
-.avatares .astronauta2 {
-  width: 300px;
-  position: absolute;
-  top: 25px;
-  z-index: 1;
-}
-.avatares .asteroide {
-  width: 15px;
-  position: absolute;
-  top: 0;
-  left: 130px;
-}
-.avatares .mercurio {
-  width: 25px;
-  position: absolute;
-  top: 40px;
-  right: 20px;
-}
-.avatares .venus {
-  width: 15px;
-  position: absolute;
-  top: 100px;
-  right: 90px;
-}
-.avatares .galaxia--1 {
-  width: 30px;
-  position: absolute;
-  top: 4px;
-  right: 100px;
-}
-.avatares .galaxia--2 {
-  width: 18px;
-  position: absolute;
-  bottom: 130px;
-  right: 30px;
-}
-.avatares .planeta {
-  width: 18px;
-  position: absolute;
-  bottom: 130px;
-  left: 30px;
+.avatar img {
+  width: 360px;
 }
 
-main {
-  background-color: #1c0445;
-  border-color: #1c0445;
-}
-
-.sobreMi {
+#about {
   padding: 20px;
-  position: relative;
   height: 90vh;
+  background-image: url(../assets/background-about.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.sobreMi h2 {
+#about .sobre-mi h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
   margin: 10px;
 }
-.sobreMi p {
+#about .sobre-mi p {
   color: #fff;
   font-size: 1rem;
   font-size: 400;
   margin: 10px;
 }
-.sobreMi .astronauta8 {
+#about .avatar2 {
+  position: relative;
+}
+#about .avatar2 .astronauta8 {
   width: 300px;
 }
-.sobreMi .estrella--5 {
+#about .avatar2 .estrella--5 {
   width: 30px;
   position: absolute;
   bottom: 90px;
   right: 30px;
 }
-.sobreMi .estrella--6 {
+#about .avatar2 .estrella--6 {
   width: 30px;
   position: absolute;
   bottom: 250px;
   left: 30px;
 }
-.sobreMi .galaxia--3 {
+#about .avatar2 .galaxia--3 {
   width: 30px;
   position: absolute;
   bottom: 260px;
   right: 30px;
 }
-.sobreMi .galaxia--4 {
+#about .avatar2 .galaxia--4 {
   width: 30px;
   position: absolute;
   bottom: 90px;
   left: 30px;
 }
 
-.stack {
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
+#stack {
   height: 100vh;
+  background-image: url(../assets/background-stack.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.stack h2 {
+#stack .stack {
+  padding: 20px;
+  height: 40%;
+}
+#stack .stack h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
   margin: 0 0 20px 0;
 }
-.stack .btn-desing {
+#stack .stack .btn-desing {
   display: inline-block;
   font-size: 1rem;
   font-weight: 400;
@@ -394,12 +300,12 @@ main {
   background-color: transparent;
   cursor: pointer;
 }
-.stack .active {
+#stack .stack .active {
   background-color: #800080;
   color: #33006F;
   border-color: #800080;
 }
-.stack #contenedor-img {
+#stack .stack #contenedor-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,15 +322,20 @@ main {
   margin: 20px 0 30px 0;
   height: 150px;
 }
-.stack #contenedor-img img {
+#stack .stack #contenedor-img img {
   display: block;
   width: 40px;
   margin: 10px;
 }
-.stack .astronauta4 {
+#stack .container-img {
+  position: relative;
+  overflow: hidden;
+  height: 60%;
+}
+#stack .container-img .astronauta4 {
   width: 300px;
 }
-.stack .venus--2 {
+#stack .container-img .venus--2 {
   width: 90%;
   position: absolute;
   bottom: -180px;

@@ -1,7 +1,7 @@
 #barra{
     width: 100%;
     height: 7vh;
-    background-color: #1c0445;
+    background-color: #121212;
 }
 #barra-de-navegacion{
     width: 100%;
@@ -11,7 +11,7 @@
     align-items: center;
     padding: 20px;
     position: relative;
-    background-color: #1c0445;
+    background-color: #121212;
     color: #fff;
     z-index: 2;
     img{
@@ -23,7 +23,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #9109cd;
+        background-color: #4e2c96;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -32,7 +32,7 @@
         a{
             display: block;
             margin-left: 20px;
-            color: #660366;
+            color: #342163;
             font-size: 3rem;
             font-weight: 600;
             text-decoration: none;
@@ -72,7 +72,6 @@
 }
 
 .active-scroll{
-    background-color: #27023c!important;
     position: fixed !important;
 
 }
@@ -83,8 +82,8 @@
 }
 
 .slide-in-top {
-	-webkit-animation: slide-in-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -102,8 +101,8 @@
 }
 
 .slide-out-top {
-	-webkit-animation: slide-out-top 4.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: slide-out-top 4.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	-webkit-animation: slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @keyframes slide-out-top {
@@ -132,24 +131,5 @@
     100% {
       -webkit-transform: scale(1);
               transform: scale(1);
-    }
-}
-  
-
-.slide-in-top--2 {
-	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@keyframes slide-in-top--2 {
-    0% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
     }
 }
