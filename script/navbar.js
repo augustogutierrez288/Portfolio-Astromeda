@@ -28,11 +28,15 @@ menu.addEventListener("click",() =>{
 
 all.forEach((e) => {
     e.addEventListener("click", () =>{
-        all.forEach((boton) => boton.classList.remove("active-color-menu"));
-        e.classList.add("active-color-menu");
-        burger.classList.remove("is-active");
-        navbar.classList.remove("active-navbar");
-        animacionNavbar()
+        setTimeout(() => {
+            all.forEach((boton) => boton.classList.remove("active-color-menu"));
+            e.classList.add("active-color-menu");
+            burger.classList.remove("is-active");
+            navbar.classList.remove("active-navbar");
+            burger.style = "position: absolute";
+            animacionNavbar()
+        }, 650);
+        
     });
 });
 

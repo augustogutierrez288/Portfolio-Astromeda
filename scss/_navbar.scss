@@ -82,8 +82,8 @@
 }
 
 .slide-in-top {
-	-webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -101,8 +101,8 @@
 }
 
 .slide-out-top {
-	-webkit-animation: slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	-webkit-animation: slide-out-top 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-top 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @keyframes slide-out-top {
@@ -119,8 +119,8 @@
 }
 
 .scale-up-center {
-	-webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes scale-up-center {

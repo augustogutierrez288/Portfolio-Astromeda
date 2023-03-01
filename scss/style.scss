@@ -2,3 +2,123 @@
 @import "navbar";
 @import "header";
 @import "main";
+
+@media screen and (min-width: 992px) {
+ 
+}
+
+@media screen and (min-width: 768px) {
+    .avatar{
+        img{
+            width: 540px !important;
+        }
+    }
+    .venus--2{
+        width: 70% !important;
+        bottom: -300px !important;
+    }
+    #about{
+        .avatar2{
+            .astronauta8{
+                width: 450px; 
+            }
+            .estrella--5{
+                width: 50px;
+            }
+            .estrella--6{
+                width: 50px;
+            }
+            .galaxia--3{
+                width: 50px;
+            }
+            .galaxia--4{
+                width: 50px;
+            }
+             
+        } 
+    }
+    .btn-desing{
+        font-size: 1.4rem;
+    }
+    #contenedor-img{
+        height: auto;
+        img{
+            width: 50px;
+            margin: 15px;
+        }
+    }
+    .astronauta4 {
+        width: 350px !important;
+    }
+    .container-box{
+        width: 80% !important;
+        .boxProjects{
+            height: 435px;
+        } 
+    }
+    #certificates{
+      .certificados{
+        div{
+          img {
+            width: 60%;
+            }   
+        } 
+      }  
+    } 
+}
+
+@media screen and (min-width: 576px) {
+    .titulos {
+        h1 {
+            font-size: 48px !important;
+        }
+        p{
+            font-size: 23px !important;
+        }
+    }
+    #about{
+        .sobre-mi {
+            h2{
+                font-size: 3rem !important;
+            }
+            p {
+                font-size: 1.2rem !important;
+            }
+        }
+    } 
+    #stack {
+      .stack {
+        h2 {
+            font-size: 3rem !important;
+        }
+      } 
+    }
+    .venus--2{
+        bottom: -320px !important;
+    }
+    #projects{
+        .proyectos{
+            h2{
+                font-size: 3rem !important;
+            }
+        }    
+    } 
+    .boxProjects{
+        height: 415px !important;
+    }
+    #certificates{
+      .certificados{
+        h2 {
+            font-size: 3rem !important;
+        } 
+      }  
+    } 
+    #contact{
+      .contactos{
+        h2 {
+            font-size: 3rem !important;
+        }  
+      } 
+    } 
+    
+}

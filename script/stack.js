@@ -17,24 +17,26 @@ class Stack{
         this.ruta = ruta
     };
 };
-//lenguajes
-const html = new Stack("lenguaje","html5","./assets/html-5.png");
-const css = new Stack("lenguaje","css3","./assets/css-3.png");
-const js = new Stack("lenguaje","javascript","./assets/js.png");
-const tsc = new Stack("lenguaje","typescript","./assets/typescript.png");
-const python = new Stack("lenguaje","python","./assets/python.png");
-const sass = new Stack("lenguaje","python","./assets/sass.png");
+//Frontend
+const html = new Stack("frontend","html5","./assets/html-5.png");
+const css = new Stack("frontend","css3","./assets/css-3.png");
+const sass = new Stack("frontend","python","./assets/sass.png");
+const bootstrap = new Stack("frontend","bootstrap","./assets/bootstrap.png");
+const js = new Stack("frontend","javascript","./assets/js.png");
+const jsx = new Stack("frontend","JSX","./assets/jsx.png");
+const react = new Stack("frontend","react","./assets/react.png");
+const vite = new Stack("frontend","vite","./assets/vite.png");
+
 //frameworks
-const bootstrap = new Stack("framework","bootstrap","./assets/bootstrap.png");
-const react = new Stack("framework","react","./assets/react.png");
-const reactNative = new Stack("framework","react native","./assets/react-native.png");
-const angular = new Stack("framework","angular","./assets/angular.png");
-// entorno de ejecucion
-const nodeJS = new Stack("EV","nodejs","./assets/nodejs.png");
+const nodeJS = new Stack("backend","nodejs","./assets/nodejs.png");
+const python = new Stack("backend","python","./assets/python.png");
+
 //repositorios
 const git = new Stack("repositorio","git","./assets/git.webp")
 const github = new Stack("repositorio","github","./assets/github.webp")
-const arrayStack = [html,css,js,tsc,python,sass,bootstrap,react,reactNative,angular,nodeJS,git,github];
+
+const arrayStack = [html,css,sass,bootstrap,js,jsx,react,vite,nodeJS,python,git,github];
+
 pintarStack(arrayStack);
 //filtro
 const botones = document.querySelectorAll(".btn-desing");

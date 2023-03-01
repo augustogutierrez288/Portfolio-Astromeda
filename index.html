@@ -20,7 +20,6 @@
 <body>
     <nav id="barra">
         <div id="barra-de-navegacion">
-            <img class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block " src="./assets/cohete.png" alt="cohete">
             <div class="navbar">
                 <img class="element-1 scale-up-center" src="./assets/cohete.png" alt="cohete">
                 <a class="all active-color-menu scale-up-center" href="#home">Inicio</a>
@@ -57,6 +56,7 @@
         </section>
     </header>
     <main class="container-fluid">
+
         <section class="row" id="about">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 sobre-mi d-flex flex-column justify-content-start align-items-center text-center">
                 <h2>Sobre Mí</h2>
@@ -76,11 +76,12 @@
                 <img class="galaxia--4" src="./assets/galaxia2.webp" alt="galaxia">
             </div>
         </section>
+
         <section class="row" id="stack">
             <div class="stack col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-start align-items-center text-center">
                 <h2>Stack</h2>
                 <div class=" col-12 d-flex justify-content-center align-items-center text-center" style="width: 100%;">
-                    <button type="button" class="btn-desing active" id="all">All</button> <button type="button" class="btn-desing" id="lenguaje">Lenguajes</button> <button type="button" class="btn-desing" id="framework">Frameworks</button>
+                    <button type="button" class="btn-desing active" id="all">All</button> <button type="button" class="btn-desing" id="frontend">Frontend</button> <button type="button" class="btn-desing" id="backend">Backend</button>
                 </div>
                 <div class="col-12" id="contenedor-img"></div>
             </div>
@@ -89,36 +90,89 @@
                 <img class="venus--2" src="./assets/venus.png" alt="venus">
             </div>
         </section>
+
         <section class="row" id="projects">
             <div class="col-12 d-flex flex-column justify-content-start align-items-center proyectos">
 
                 <h2>Proyectos</h2>
 
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./assets/PandingPagePS4.png" class="d-block w-100" alt="lanndig-page">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/NikeWebSIte.png" class="d-block w-100" alt="nike-website">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/ElTurcoBurgers.png" class="d-block w-100" alt="el-turco-burgers">
-                      </div>
+                <div class="container-box">
+
+                    <div class="boxProjects">
+                        <div class="cols-1">
+                            <img src="./assets/GalaxiStore-Portada.webp" alt="portada">
+                        </div>
+                        <div class="cols-2">
+                            <a href="https://github.com/augustogutierrez288/GalaxiStore-React.git"><button class="bn632-hover bn25">GitHub</button></a>
+                            <a href="https://galaxistore.netlify.app/"><button class="bn632-hover bn20">WebSite</button></a>
+                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+
+                    <div class="boxProjects">
+                        <div class="cols-1">
+                            <img src="./assets/El-Turco-Burgers-Portada.webp" alt="portada">
+                        </div>
+                        <div class="cols-2">
+                            <a href="https://github.com/augustogutierrez288/ElTurcoBurgers-E-Commerce"><button class="bn632-hover bn25">GitHub</button></a>
+                            <a href="https://augustogutierrez288.github.io/ElTurcoBurgers-E-Commerce/"><button class="bn632-hover bn20">WebSite</button></a>                           
+                        </div>
+                    </div>
+
+                    <div class="boxProjects">
+                        <div class="cols-1">
+                            <img src="./assets/NikeWebSite-Portada.webp" alt="">
+                        </div>
+                        <div class="cols-2">
+                            <a href="https://github.com/augustogutierrez288/WebSite-NikeAR"><button class="bn632-hover bn25">Button</button></a>
+                            <a href="https://augustogutierrez288.github.io/WebSite-NikeAR/"><button class="bn632-hover bn20">WebSite</button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="row" id="certificates">
+            <div class="col-12 certificados">
+
+                <h2>Certificaciones</h2>
+
+                <div>
+
+                    <img src="./assets/python.webp" alt="python">
+                    <img src="./assets/desarrolloWeb.webp" alt="desarrollo-web">
+                    <img src="./assets/javascript.webp" alt="javascript">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="row" id="contact">
+            <div class="col-12 contactos">
+
+                <h2>Contactos</h2>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatar-contact">
+                    <img src="./assets/md3.png" alt="md3">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 details-contact">
+
+                    <div><img src="./assets/envelope-at.svg" alt="email"><p>Email: augustogutierrez8448@outlook.es</p></div>
+                    <div><img src="./assets/telephone-fill.svg" alt="phone"><p>Telefono: +54 9 3815977029</p></div>
+                    <div><img src="./assets/geo-alt-fill.svg" alt="geo"><p>Direccion: Tucuman, Argentina</p></div>    
+                    
+                </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-12">© 2022 Portfolio Astromeda. Todos los derechos reservados. Desarrollado por Augusto Gutierrez</p>
+        </div>
+        
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./script/stack.js" defer></script>
