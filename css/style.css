@@ -217,6 +217,7 @@ body {
 }
 .navbar-2 .cols-navbar-2 a:hover {
   color: #4acafd;
+  background-color: transparent;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -237,12 +238,14 @@ header {
   font-weight: 400;
   margin: 10px;
 }
+.titulos h1 {
+  height: 114px;
+}
 .titulos h1 .typed {
   color: #fff;
   font-size: 44px;
   font-weight: 600;
   margin: 5px;
-  height: 58px;
 }
 
 .avatar {
@@ -382,10 +385,11 @@ header {
   overflow: hidden;
   height: 60%;
 }
-#stack .container-img .astronauta4 {
+#stack .container-img .md4 {
   width: 300px;
   position: absolute;
   top: 20px;
+  right: -400px;
 }
 #stack .container-img .venus--2 {
   width: 90%;
@@ -440,6 +444,22 @@ header {
   font-weight: 600;
   margin: 20px 0 50px 0;
   color: #fff;
+}
+
+.container-carousel {
+  width: 80%;
+  height: 50%;
+}
+
+.container-md7 {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.container-md7 .md7 {
+  position: absolute;
+  right: 0px;
 }
 
 #contact {
@@ -512,7 +532,14 @@ footer div p {
     width: 82% !important;
     bottom: -250px !important;
   }
-  .md7 {
+  .container-carousel {
+    height: 80% !important;
+  }
+  .container-md7 {
+    width: 50% !important;
+    height: 100% !important;
+  }
+  .container-md7 .md7 {
     width: 450px !important;
   }
   .contact h2 {
@@ -529,6 +556,13 @@ footer div p {
   }
 }
 @media screen and (min-width: 768px) {
+  h1 {
+    height: auto !important;
+  }
+  h1 .typed {
+    font-size: 50px;
+    height: 58px;
+  }
   .avatar img {
     width: 540px !important;
   }
@@ -562,7 +596,7 @@ footer div p {
     width: 50px !important;
     margin: 15px !important;
   }
-  .astronauta4 {
+  .md4 {
     width: 350px !important;
   }
   #projects .proyectos .container-box {
@@ -574,7 +608,7 @@ footer div p {
   }
 }
 @media screen and (min-width: 576px) {
-  .titulos h1 {
+  .titulos h1 .typed {
     font-size: 48px;
   }
   .titulos p {

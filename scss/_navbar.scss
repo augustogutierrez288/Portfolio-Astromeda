@@ -150,6 +150,7 @@
         transition: 0.5s;
         &:hover{
             color:#4acafd;
+            background-color: transparent;
             transform: scale(1.1);
         }
     }

@@ -15,20 +15,27 @@
         height: 100vh;
     }
     #contenedor-img{
-    width: 70%;
+        width: 70%;
     }
     .stack{
-    height: 100% !important;
+        height: 100% !important;
     }
     .container-img{
-    height: 100% !important;
+        height: 100% !important;
     }
     .venus--2 {
-    width: 82% !important;
-    bottom: -250px !important;
+        width: 82% !important;
+        bottom: -250px !important;
     }
-    .md7{
-        width: 450px !important;
+    .container-carousel{
+        height: 80% !important;
+    }
+    .container-md7{
+        width: 50% !important;
+        height: 100% !important;
+        .md7{
+            width: 450px !important;
+        }
     }
     .contact{
         h2{
@@ -51,6 +58,14 @@
 }
 
 @media screen and (min-width: 768px) {
+    h1{
+        height: auto !important;
+        .typed{
+            font-size: 50px;
+            height: 58px;
+        }
+    }
+    
     .avatar{
         img{
             width: 540px !important;
@@ -91,7 +106,7 @@
             margin: 15px !important;
         }
     }
-    .astronauta4 {
+    .md4 {
         width: 350px !important;
     }
     #projects{
@@ -110,7 +125,9 @@
 @media screen and (min-width: 576px) {
     .titulos {
         h1 {
-            font-size: 48px;
+            .typed{
+                font-size: 48px;
+            }
         }
         p{
             font-size: 23px;
@@ -156,8 +173,5 @@
                 font-size: 1rem;
             }
         }
-    } 
-
-    
-    
+    }
 }

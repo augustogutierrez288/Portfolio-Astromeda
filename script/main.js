@@ -71,3 +71,28 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+// Parallax
+
+const md4 = document.getElementById("md4");
+const md7 = document.getElementById("md7");
+
+const computadora = 922;
+const table = 768;
+const movil = 390;
+
+window.addEventListener("scroll", ()=>{
+    let scroll = window.scrollY;
+    console.log(scroll)
+    if(window.screen.width >= computadora){
+        md4.style.right = scroll * .3 - 230 + "px";
+        md7.style.right = scroll * .2 - 400 + "px";
+    }else if(window.screen.width >= table){
+        md4.style.right = scroll * .25 - 300 + "px";
+        md7.style.right = scroll * .2 - 600 + "px";
+    }else if(window.screen.width >= movil){
+        md4.style.right = scroll * .25 - 350 + "px";
+        md7.style.right = scroll * .2 - 750 + "px";
+    }
+    
+})
