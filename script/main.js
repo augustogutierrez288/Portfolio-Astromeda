@@ -1,12 +1,10 @@
 const contenedorImg = document.getElementById("contenedor-img");
+
 //DOM de la sesion stack modificado.
 function pintarStack(array){
     contenedorImg.innerHTML = " ";
     array.forEach(element => {
-        contenedorImg.innerHTML += 
-        `
-        <img src="${element.ruta}" alt="${element.name}">
-        `
+        contenedorImg.innerHTML += `<img src="${element.ruta}" data-aos="zoom-in" alt="${element.name}">`
     });
 };
 //clase para crear distintos objetos basado en el stack tecnologico.
@@ -38,6 +36,7 @@ const github = new Stack("repositorio","github","./assets/github.webp")
 const arrayStack = [html,css,sass,bootstrap,js,jsx,react,vite,nodeJS,python,git,github];
 
 pintarStack(arrayStack);
+
 //filtro
 const botones = document.querySelectorAll(".btn-desing");
 botones.forEach((btn) =>{
@@ -53,3 +52,22 @@ botones.forEach((btn) =>{
 
     })
 })
+
+//typed.js 
+
+const typed = new Typed('.typed', {
+	strings: ['Augusto Gutierrez'],
+
+	//stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 85, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 500, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 85, // Velocidad en milisegundos para borrrar una letra,
+	//smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});

@@ -3,4 +3,16 @@ body{
     scroll-behavior: smooth !important;
     background-color: #121212 !important;
 }
+::-webkit-scrollbar{
+    width: 10px;
 
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #4acafd;
+    border-radius: 15px;
+}

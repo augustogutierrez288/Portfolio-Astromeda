@@ -13,14 +13,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!--css Tasty CSS-animated hamburgers-->
     <link rel="stylesheet" href="./css/hamburgers.css">
+    <!--css Animate On Scroll Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--css-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Porfolio - Augusto Gutierrez</title>
 </head>
 <body>
-    <nav id="barra">
-        <div id="barra-de-navegacion">
-            <div class="navbar">
+    <nav class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none" id="barra">
+        <div class="p-0" id="barra-de-navegacion">
+
+            <div class="navbar d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
                 <img class="element-1 scale-up-center" src="./assets/cohete.png" alt="cohete">
                 <a class="all active-color-menu scale-up-center" href="#home">Inicio</a>
                 <a class="all scale-up-center" href="#about">Sobre mí</a>
@@ -34,97 +37,141 @@
                    <a href="https://www.linkedin.com/in/augusto-gutierrez/"><img src="./assets/linkedin.png" alt="linkedin"></a>
                 </div>
             </div>
-            <div class="hamburger  hamburger--collapse" id="menu">
+
+            <div class="hamburger  hamburger--collapse d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none" id="menu">
                 <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+                    <div class="hamburger-inner"></div>
                 </div>
             </div>
-              
-            
+                          
         </div>
     </nav>
     <header class="container-fluid" id="home">
         <section class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 titulos text-center">
+            <nav class=" col-12 navbar-2 h-100 w-100 p-2 bg-transparent d-lg-flex justify-content-lg-between align-items-lg-center
+            d-xl-flex justify-content-xl-between align-items-xl-center d-xxl-flex justify-content-xxl-between align-items-xxl-center 
+            d-none d-sm-none d-md-none">
+
+                <div class="cols-navbar-1 ms-4">
+                  <img  src="./assets/cohete.png" alt="cohete">
+                </div>
+                <div class="cols-navbar-2 me-4">
+                    <a class="m-1" href="#home">Inicio</a>
+                    <a class="m-1" href="#about">Sobre mí</a>
+                    <a class="m-1" href="#stack">Stack</a>
+                    <a class="m-1" href="#projects">Proyectos</a>
+                    <a class="m-1" href="#certificates">Certificados</a>
+                    <a class="m-1" href="contact">Contacto</a>
+                </div>
+
+            </nav>
+        </section>
+        <section class="row section-header-2">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center d-flex flex-column justify-content-center align-items-center titulos">
                 <p>Hola me llamo</p>
-                <h1>Augusto Gutierrez</h1>
-                <p>Desarrollador Frontend</p>
+                <h1><span class="typed"></span></h1>
+                <p>Soy un Desarrollador Frontend React</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatar d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatar d-flex justify-content-center align-items-center">
                 <img src="./assets/avatar-header.svg" alt="avatar-header">
             </div>
         </section>
     </header>
     <main class="container-fluid">
 
-        <section class="row" id="about">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 sobre-mi d-flex flex-column justify-content-start align-items-center text-center">
+        <section class="row p-4" id="about">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 
+            d-flex flex-column justify-content-center align-items-center text-center sobre-mi " data-aos="fade-right">
                 <h2>Sobre Mí</h2>
                 <p>
-                    Soy un joven de 21 años estudiante de la tecnicatura universitaria en programacion, apasionado por el desarrollo de 
-                    software y crear proyectos Frontend o E-commerce, me gusta trabajar en equipos dinamicos, desafiantes y aprender cada 
-                    dia un poco mas. Trabajo en proyectos en los cuales siempre busco ser perfeccionista y fijarme en cada detalle para
-                    obtener el mejor producto posible. 
+                    Soy un joven estudiante de la tecnicatura universitaria en programación dictada en la UTN-FRT.
+                    Actualmente, me desempeño como desarrollador frontend con la tecnología React, desarrollando aplicaciones 
+                    escalables y con las mejores prácticas de desarrollo. Cada día aprendo algo nuevo y lo aplico en proyectos
+                    personales para mejorar mi desempeño. 
 
                 </p>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatar2 d-flex flex-column justify-content-start align-items-center text-center">
-                <img class="astronauta8" src="./assets/md8.webp" alt="astronauta8">
-                <img class="estrella--5" src="./assets/estrellas.webp" alt="estrella">
-                <img class="estrella--6" src="./assets/estrellas.webp" alt="estrella">
-                <img class="galaxia--3" src="./assets/galaxia.webp" alt="galaxia">
-                <img class="galaxia--4" src="./assets/galaxia2.webp" alt="galaxia">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 
+            d-flex flex-column justify-content-center align-items-center avatar2">
+                <img class="astronauta8" data-aos="zoom-in" src="./assets/md8.webp" alt="astronauta8">
+                <img class="estrella--5" data-aos="zoom-in" src="./assets/estrellas.webp" alt="estrella">
+                <img class="estrella--6" data-aos="zoom-in" src="./assets/estrellas.webp" alt="estrella">
+                <img class="galaxia--3" data-aos="zoom-in" src="./assets/galaxia.webp" alt="galaxia">
+                <img class="galaxia--4" data-aos="zoom-in" src="./assets/galaxia2.webp" alt="galaxia">
             </div>
         </section>
 
         <section class="row" id="stack">
-            <div class="stack col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-start align-items-center text-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-3
+            d-flex flex-column justify-content-center align-items-center text-center stack">
+
                 <h2>Stack</h2>
-                <div class=" col-12 d-flex justify-content-center align-items-center text-center" style="width: 100%;">
-                    <button type="button" class="btn-desing active" id="all">All</button> <button type="button" class="btn-desing" id="frontend">Frontend</button> <button type="button" class="btn-desing" id="backend">Backend</button>
+
+                <div class="d-flex justify-content-center align-items-center text-center w-100">
+                    <button type="button" class="btn-desing active" id="all">All</button> 
+                    <button type="button" class="btn-desing" id="frontend">Frontend</button> 
+                    <button type="button" class="btn-desing" id="backend">Backend</button>
                 </div>
-                <div class="col-12" id="contenedor-img"></div>
+                <div class="w-90 mt-2 mb-3 p-2 d-flex flex-row flex-wrap justify-content-center 
+                align-items-center" id="contenedor-img"></div>
+
             </div>
-            <div class="container-img col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-start align-items-center">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 
+            d-flex flex-column justify-content-center align-items-center container-img">
+
                 <img class="astronauta4" src="./assets/md4.png" alt="astronauta4">
                 <img class="venus--2" src="./assets/venus.png" alt="venus">
+
             </div>
+
         </section>
 
         <section class="row" id="projects">
-            <div class="col-12 d-flex flex-column justify-content-start align-items-center proyectos">
+            <div class="col-12 p-4 w-100 d-flex flex-column justify-content-center align-items-center projects">
 
                 <h2>Proyectos</h2>
 
-                <div class="container-box">
+                <div class="col-12 w-100 d-flex flex-row flex-wrap justify-content-evenly align-items-center container-box">
 
-                    <div class="boxProjects">
-                        <div class="cols-1">
+                    <div class="boxProjects p-3 m-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up">
+                        <div class="cols-1 w-95 h-50">
                             <img src="./assets/GalaxiStore-Portada.webp" alt="portada">
                         </div>
-                        <div class="cols-2">
-                            <a href="https://github.com/augustogutierrez288/GalaxiStore-React.git"><button class="bn632-hover bn25">GitHub</button></a>
-                            <a href="https://galaxistore.netlify.app/"><button class="bn632-hover bn20">WebSite</button></a>
+                        <div class="cols-2 p-2 w-100 h-50 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Desarrollo de un E-Commerce SPA con React.</h3>
+                            <div class=" w-100 d-flex justify-content-start align-items-center">
+                                <a class="btn btn-outline-info m-2" href="https://github.com/augustogutierrez288/GalaxiStore-React.git">GitHub</a>
+                                <a class="btn btn-info m-2" href="https://galaxistore.netlify.app/">WebSite</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="boxProjects">
-                        <div class="cols-1">
+                    <div class="boxProjects p-3 m-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up">
+                        <div class="cols-1 w-95 h-50">
                             <img src="./assets/El-Turco-Burgers-Portada.webp" alt="portada">
                         </div>
-                        <div class="cols-2">
-                            <a href="https://github.com/augustogutierrez288/ElTurcoBurgers-E-Commerce"><button class="bn632-hover bn25">GitHub</button></a>
-                            <a href="https://augustogutierrez288.github.io/ElTurcoBurgers-E-Commerce/"><button class="bn632-hover bn20">WebSite</button></a>                           
+                        <div class="cols-2 p-2 w-100 h-50 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Desarrollo de un E-Commerce con Vanilla JavaScript.</h3>
+                            <div class=" w-100 d-flex justify-content-start align-items-center">
+                                <a class="btn btn-outline-info m-2" href="https://github.com/augustogutierrez288/ElTurcoBurgers-E-Commerce">GitHub</a>
+                                <a class="btn btn-info m-2" href="https://augustogutierrez288.github.io/ElTurcoBurgers-E-Commerce/">WebSite</a>
+                            </div>
+                                                       
                         </div>
                     </div>
 
-                    <div class="boxProjects">
-                        <div class="cols-1">
+                    <div class="boxProjects p-3 m-2 d-flex flex-column justify-content-center align-items-center" data-aos="fade-up">
+                        <div class="cols-1 w-95 h-50">
                             <img src="./assets/NikeWebSite-Portada.webp" alt="">
                         </div>
-                        <div class="cols-2">
-                            <a href="https://github.com/augustogutierrez288/WebSite-NikeAR"><button class="bn632-hover bn25">Button</button></a>
-                            <a href="https://augustogutierrez288.github.io/WebSite-NikeAR/"><button class="bn632-hover bn20">WebSite</button></a>
+                        <div class="cols-2 p-2 w-100 h-50 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Desarrollo de un Sitio Web con HTMl5, CSS3, Bootstrap 5 y Sass.</h3>
+                            <div class="w-100 d-flex justify-content-start align-items-center">
+                                <a class="btn btn-outline-info m-2" href="https://github.com/augustogutierrez288/WebSite-NikeAR">GitHub</a>
+                                <a class="btn btn-info m-2" href="https://augustogutierrez288.github.io/WebSite-NikeAR/">WebSite</a>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -134,39 +181,55 @@
         </section>
 
         <section class="row" id="certificates">
-            <div class="col-12 certificados">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-4 
+            d-flex flex-column justify-content-center align-items-center certificates">
 
                 <h2>Certificaciones</h2>
 
-                <div>
-
-                    <img src="./assets/python.webp" alt="python">
-                    <img src="./assets/desarrolloWeb.webp" alt="desarrollo-web">
-                    <img src="./assets/javascript.webp" alt="javascript">
-                    
+                <div style="width: 80%; height: 80%;">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets/python.webp" class="d-block w-100" alt="certificado-python">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/desarrolloWeb.webp" class="d-block w-100" alt="certificado-desarrollo-web">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/javascript.webp" class="d-block w-100" alt="certificado-javascript">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                      </div>
                 </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-4 
+            d-flex flex-column justify-content-center align-items-center">
+                <img class="md7" src="./assets/md7.png" alt="astronauta-7" style="width: 350px;">
             </div>
         </section>
 
         <section class="row" id="contact">
-            <div class="col-12 contactos">
-
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-2
+            d-flex justify-content-center align-items-center avatar-contact">
+                <img src="./assets/md3.png" alt="md3">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-2 
+            d-flex flex-column justify-content-evenly align-items-center contact">
                 <h2>Contactos</h2>
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 avatar-contact">
-                    <img src="./assets/md3.png" alt="md3">
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 details-contact">
-
-                    <div><img src="./assets/envelope-at.svg" alt="email"><p>Email: augustogutierrez8448@outlook.es</p></div>
-                    <div><img src="./assets/telephone-fill.svg" alt="phone"><p>Telefono: +54 9 3815977029</p></div>
-                    <div><img src="./assets/geo-alt-fill.svg" alt="geo"><p>Direccion: Tucuman, Argentina</p></div>    
-                    
-                </div>
+                <div class="w-100 p-1 d-flex justify-content-start align-items-center"><img src="./assets/email.png" alt="email"><p>Email: augustogutierrez8448@outlook.es</p></div>
+                <div class="w-100 p-1 d-flex justify-content-start align-items-center"><img src="./assets/phone.png" alt="phone"><p>Telefono: +54 9 3815977029</p></div>
+                <div class="w-100 p-1 d-flex justify-content-start align-items-center"><img src="./assets/map.png" alt="geo"><p>Direccion: Tucuman, Argentina</p></div>
             </div>
         </section>
     </main>
+
     <footer class="container-fluid">
         <div class="row">
             <p class="col-12">© 2022 Portfolio Astromeda. Todos los derechos reservados. Desarrollado por Augusto Gutierrez</p>
@@ -174,8 +237,14 @@
         
     </footer>
 
+    <!--Animate On Scroll Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!--Bootstrap 5.2.3-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./script/stack.js" defer></script>
+    <!--Typed.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./script/main.js" defer></script>
     <script src="./script/navbar.js"></script>
 </body>
 </html>

@@ -4,7 +4,50 @@
 @import "main";
 
 @media screen and (min-width: 992px) {
- 
+    header{
+        height: 100vh;
+    }
+   
+    .section-header-2{
+        height: 90%;
+    }
+    #about{
+        height: 100vh;
+    }
+    #contenedor-img{
+    width: 70%;
+    }
+    .stack{
+    height: 100% !important;
+    }
+    .container-img{
+    height: 100% !important;
+    }
+    .venus--2 {
+    width: 82% !important;
+    bottom: -250px !important;
+    }
+    .md7{
+        width: 450px !important;
+    }
+    .contact{
+        h2{
+            font-size: 3rem !important;
+        }
+        div{
+            img{
+                width: 33px !important;
+            }
+            p{
+                font-size: 1.3rem !important;
+            }
+        }
+    }
+    .avatar-contact{
+        img{
+            width: 450px !important;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -41,84 +84,80 @@
         font-size: 1.4rem;
     }
     #contenedor-img{
-        height: auto;
+        width: 80%;
+        height: 150px;
         img{
-            width: 50px;
-            margin: 15px;
+            width: 50px !important;
+            margin: 15px !important;
         }
     }
     .astronauta4 {
         width: 350px !important;
     }
-    .container-box{
-        width: 80% !important;
-        .boxProjects{
-            height: 435px;
-        } 
+    #projects{
+        .proyectos{
+            .container-box{
+                width: 80% ;
+                .boxProjects{
+                    width: 540px ;
+                    height: 500px ;
+                } 
+            }
+        }
     }
-    #certificates{
-      .certificados{
-        div{
-          img {
-            width: 60%;
-            }   
-        } 
-      }  
-    } 
 }
 
 @media screen and (min-width: 576px) {
     .titulos {
         h1 {
-            font-size: 48px !important;
+            font-size: 48px;
         }
         p{
-            font-size: 23px !important;
+            font-size: 23px;
         }
     }
     #about{
         .sobre-mi {
             h2{
-                font-size: 3rem !important;
+                font-size: 3rem;
             }
             p {
-                font-size: 1.2rem !important;
+                font-size: 1.2rem;
             }
         }
     } 
-    #stack {
-      .stack {
+    .stack {
         h2 {
             font-size: 3rem !important;
         }
-      } 
     }
     .venus--2{
-        bottom: -320px !important;
+        bottom: -320px;
     }
-    #projects{
-        .proyectos{
-            h2{
-                font-size: 3rem !important;
-            }
-        }    
+    .projects{
+        h2{
+            font-size: 3rem !important;
+        }
     } 
-    .boxProjects{
-        height: 415px !important;
-    }
-    #certificates{
-      .certificados{
+    .certificates{
         h2 {
             font-size: 3rem !important;
         } 
-      }  
-    } 
-    #contact{
-      .contactos{
+    }  
+    .contactos{
         h2 {
             font-size: 3rem !important;
-        }  
-      } 
+        }
+        div{
+            img{
+                width: 30px !important;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
     } 
+
+    
     
 }

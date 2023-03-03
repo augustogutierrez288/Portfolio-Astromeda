@@ -14,16 +14,35 @@ header{
         margin: 10px;
     }
     h1{
-        color: #fff;
-        font-size: 44px;
-        font-weight: 600;
-        margin: 5px;
+        .typed{
+            color: #fff;
+            font-size: 44px;
+            font-weight: 600;
+            margin: 5px;
+            height: 58px;
+        }
     }
 }
-
 .avatar{
     position: relative;
     img{
+        animation: updown 3s linear infinite;
         width: 360px;
+    }
+}
+.typed-cursor{
+    background-color: transparent;
+    color: #fff;
+    width: 4px !important;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
     }
 }
